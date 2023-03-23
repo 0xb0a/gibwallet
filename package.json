@@ -1,0 +1,26 @@
+{
+  "name": "gibwallet",
+  "version": "1.0.1",
+  "description": "A utility for generating Tiplink wallets.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "gibwallet": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -w",
+    "lint": "eslint --ext .ts src",
+    "build": "tsc"
+  },
+  "author": "qudo-code",
+  "license": "ISC",
+  "dependencies": {
+    "@tiplink/api": "^0.1.2",
+    "ascii-table": "^0.0.9",
+    "base58": "^2.0.1",
+    "chalk": "^5.2.0",
+    "node-fetch": "^3.3.1"
+  }
+}
